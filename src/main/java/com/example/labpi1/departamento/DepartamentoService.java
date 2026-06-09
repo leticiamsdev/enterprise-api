@@ -11,7 +11,7 @@ import java.util.Optional;
 public class DepartamentoService {
     private final DepartamentoRepository departamentoRepository;
 
-    @Autowired // Force a anotação para garantir
+    @Autowired 
     public DepartamentoService(DepartamentoRepository departamentoRepository) {
         if (departamentoRepository == null) {
             throw new RuntimeException("ERRO CRÍTICO: O Spring passou um repositório nulo!");
